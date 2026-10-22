@@ -1,0 +1,75 @@
+# ==========================================
+# Environment variables and private secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env.local
+
+# ==========================================
+# Google Cloud / service-account credentials
+# Never commit these
+# ==========================================
+*service-account*.json
+*credential*.json
+*credentials*.json
+gcp-key.json
+vision-key.json
+metro-verify-vision.json
+backend/gcp-vision-credentials.json
+backend/google-credentials.json
+backend/service-account.json
+
+# ==========================================
+# Python generated files
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Python virtual environments
+# ==========================================
+.venv/
+venv/
+env/
+backend/venv/
+backend/**/__pycache__/
+
+# ==========================================
+# Node / Next.js generated files
+# ==========================================
+node_modules/
+.next/
+.next-verify/
+out/
+*.tsbuildinfo
+
+# ==========================================
+# Local backups / temporary working copies
+# ==========================================
+backup-before-google-ocr/
+*_working.py
+*_safe_before_*.py
+*.dat
+
+# ==========================================
+# IDE and OS files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# ==========================================
+# Optional local documents
+# ==========================================
+*.pdf
+*.docx
